@@ -1,7 +1,7 @@
 import torch
 from src.data_loader import download_data, read_data
 from src.model import BoW, create_tensors
-from src.train.py import train_bow
+from src.train import train_bow
 from src.inference import perform_inference
 
 urls = [
