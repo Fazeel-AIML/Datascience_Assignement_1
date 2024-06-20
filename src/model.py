@@ -15,4 +15,5 @@ class BoW(nn.Module):
 
 def create_tensors(data, word_to_index, tag_to_index):
     for line in data:
-        yield ([word_to_index.get(word, word_to_index["<unk>"]) for word in line[1].split(" ")], tag_to_index[line[0]])
+        yield ([word_to_index.get(word, word_to_index["<unk>"]) for word in line[0]], tag_to_index[line[1]])
+
