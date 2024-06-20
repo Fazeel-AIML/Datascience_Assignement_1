@@ -1,7 +1,7 @@
 import os
 import urllib.request
 
-def download_data(urls, dest_folder=r"data"):
+def download_data(urls, dest_folder=r"data/"):
     os.makedirs(dest_folder, exist_ok=True)
     for url in urls:
         file_name = url.split("/")[-1]
